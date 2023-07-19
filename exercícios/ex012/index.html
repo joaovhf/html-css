@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+
+<body>
+    <H1>Vídeos hospedados localmente <!-- (consome o meu próprio serviço de hospedagem)--> </H1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <!-- 1 - Forma Simples-->
+    <video src="midia/Praia.mp4" width="560" height="315" controls width="500" poster="imagens/thumb praia.png"></video>
+
+
+    <!-- 2 - Forma Complexa (para diferentes formatos)-->
+    <video width="560" height="315" controls autoplay loop>
+        <source src="midia/Praia.mp4" type="video/mp4">
+        <source src="midia/Praia.webm" type="video/webm">
+        <source src="midia/Praia.ogv" type="video/ogg">
+
+    </video>
+
+    <!-- Ambos abaixo não consomem meu serviço de hospedagem -->
+    <h1>Incorporando vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    
+
+
+    <h1>Incorporando vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/76979871?h=8272103f6e&loop=1" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+
+
+</html>

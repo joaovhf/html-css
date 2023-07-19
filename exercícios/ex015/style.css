@@ -1,0 +1,18 @@
+@charset "UTF-8"
+
+body{
+    background-color: turquoise;
+    font-family: sans-serif;
+}
+
+h1{
+    color: darkred;
+}
+
+h2{
+    color: deeppink;
+}
+
+p{
+    text-align: justify;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: rgb(1, 1, 48);
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 12px 0px;
+        }
+
+        nav{
+            background-color: rgb(1, 1, 95);
+            padding: 3px;
+            box-shadow: 1px 3px 12px 0px rgba(0, 0, 0, 0.795);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 12px 3px black;
+        }
+
+        article{
+            background-color: rgb(192, 219, 247);
+            padding: 5px;
+            margin: 30px;
+            box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.322);
+            border-radius: 8px 0px;
+        }
+
+        article > aside{
+            background-color: rgb(156, 176, 197);
+            width: 300px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h2{
+            color: rgb(8, 0, 17);
+            font-weight: bold;
+            
+        }
+
+        footer{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 4px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Notícias sobre a Inter de Milão</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis porro odio magni possimus in temporibus mollitia iste rem vel soluta maxime aut autem, eos enim error. Saepe esse ut earum!</p>
+
+                <aside>
+                    <p>Artigo escrito por Augusto Fernandes</p>
+                </aside>
+            </article>
+        </section>
+
+        <section id="notícias">
+            <article>
+                <h2>Notícias sobre o Chelsea</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis soluta, ullam laboriosam, alias cumque libero quasi tempora minus quas natus, hic harum molestiae illum qui. Illum ullam nihil vitae velit!</p>
+
+                <aside> <!--aside = Conteúdo periférico ao artigo-->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Desenvolvido por João Fonseca</p>
+    </footer>
+
+</body>
+
+
+</html>

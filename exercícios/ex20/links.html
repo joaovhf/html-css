@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style> 
+    
+    /* "target= _blank" é para quando clicar abrir nova guia*/
+    
+    /*
+    
+    #   =   id
+    .   =   class
+    :   = pseudo-class
+    ::  = pseudo-element
+    >   = children
+
+    */
+
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{                /* Configuração padrão do "a" */
+            color: blue;
+            text-decoration: none;    /*Sem sublinhado*/
+        }
+
+        a:visited{        /*Quando o site já foi visitado*/
+            color: darkblue;
+        }
+
+        a:hover{          /*Quando passa o mouse por cima*/
+            color: dodgerblue;
+            text-decoration: underline;
+        }
+
+        a:active{         /*Quando é clicado*/
+            color: rgb(159, 26, 221);
+        }
+
+        a::before{
+            content: '→ ';
+        }
+
+        a::after{
+            content: ' ←';
+        }
+
+        
+        .especial{         /*classe especial (twitter)*/
+            background-color: aquamarine;
+        }
+
+        .especial::after{               /*pseudo-elemento da classe especial*/
+            content: ' [principal]';
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Personalizando links</h1>
+    <ul> 
+        <li><a href="https://twitter.com/joaoholanda1000" class="especial" target="_blank">Meu Twitter</a></li>
+
+        <li><a href="https://www.youtube.com/channel/UC4gwxoQxeWOtUuZgbMFmGrw" target="_blank">Meu Youtube</a></li>
+
+        <li><a href="https://www.instagram.com/joaovhf/" target="_blank">Meu Instagram</a></li>
+    </ul>
+    
+</body>
+
+
+</html>

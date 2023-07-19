@@ -1,0 +1,64 @@
+
+<!-- saved from url=(0043)https://c.neodatagroup.com/topics_2033.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta http-equiv="origin-trial" content="AyxWXabUrCEs4nFglrunkbZy2BE/EH+FI+o6TOOrEHSmXd/fiRT1LcEAyTFoFTWi4uEvaaRHrZDoH1EIGf6WrggAAACGeyJvcmlnaW4iOiJodHRwczovL25lb2RhdGFncm91cC5jb206NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY4MDY1Mjc5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="></head>
+    <body>
+        <script type="text/javascript">
+            let addTrialToken = function(tokenContents){
+                const tokenElement = document.createElement('meta');
+                tokenElement.httpEquiv = 'origin-trial';
+                tokenElement.content = tokenContents;
+                document.head.appendChild(tokenElement);
+            }
+
+            let getTopics = async function(){
+
+                //console.log('browsingTopics checking...');
+                if ('browsingTopics' in document && document.featurePolicy.allowsFeature('browsing-topics')) {
+                
+                    //console.log('browsingTopics checking: ','enabled');
+
+                    // let url = "https://tra.neodatagroup.com/events?sid=2033&cat=ps-topics&lbl=&val=topics_enabled&rt=img&rnd=" +parseInt((Math.random() * (Date.now())));
+                    // (new Image()).src = url;
+
+                    try{
+                        const topics = await document.browsingTopics();
+
+                        console.log(topics);
+
+                        let evtsValue = [],
+                            evtValue = "";
+                        
+                        topics.forEach (function(t){
+                            
+                            if (t.topic)
+                                evtsValue.push("topic_" + t.topic);
+                        })
+
+                        if (evtsValue.length > 0) {
+                            
+                            evtValue = evtsValue.join(",")
+                            url = "https://tra.neodatagroup.com/events?sid=2033&cat=ps-topics&lbl=&val=" + evtValue + "&rt=img&rnd=" +parseInt((Math.random() * (Date.now())));
+                            (new Image()).src = url;
+                        }
+                    }
+                    catch(e){
+                        console.log('browsingTopics error: ', e);
+                        let s = e.replace(/_/gi,'-');
+                        url = "https://tra.neodatagroup.com/events?sid=2033&cat=ps-topics&lbl=&val=topics_error-"+encodeURIComponent(s)+"&rt=img&rnd=" +parseInt((Math.random() * (Date.now())));
+                        (new Image()).src = url;
+                    }
+                    
+                }
+                else{
+                    console.log('checking browsingTopics: not enabled');
+                }
+            }
+            
+            addTrialToken("AyxWXabUrCEs4nFglrunkbZy2BE/EH+FI+o6TOOrEHSmXd/fiRT1LcEAyTFoFTWi4uEvaaRHrZDoH1EIGf6WrggAAACGeyJvcmlnaW4iOiJodHRwczovL25lb2RhdGFncm91cC5jb206NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY4MDY1Mjc5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=");
+            getTopics();
+            
+        </script>
+
+    
+</body></html>

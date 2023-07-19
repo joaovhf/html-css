@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* 
+em HTML é id           em css é # (só pode 1 elemento por documento html)
+em HTML é class        em css é . (pode vários elementos)
+*/
+
+body{
+    background-color: rgb(189, 219, 245);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    color: #0c263b;
+    
+}
+
+h1#principal{
+    text-align: center;
+    background-color: rgb(12, 38, 59);
+    color: white;
+}
+
+h2{
+
+}
+
+.basico {
+    color: #473320;
+    font-weight: bold;
+    
+}
+
+.intermediario {
+    color: #6E2B0B;
+    
+}
+
+.avançado {
+    color: #0B0D6E;
+}
